@@ -20,6 +20,11 @@ const config = (env, argv) => {
       compress: true,
       port: 3000
     },
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, "src/components")
+      }
+    },
     devtool: "source-map",
     module: {
       rules: [

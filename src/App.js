@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Footer from "components/Footer/Footer";
 
 const useNotes = url => {
   const [notes, setNotes] = useState([]);
@@ -28,6 +29,7 @@ const App = () => {
       <div>
         {notes.length} notes on server {BACKEND_URL}
       </div>
+      <Footer />
     </div>
   );
 };
